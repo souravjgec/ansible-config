@@ -16,7 +16,7 @@
   become: yes
   become_user: root
   tasks:
-    - name: Update apt repo
+    - name: Update apt rep
       apt: 
         update_cache: yes
 
