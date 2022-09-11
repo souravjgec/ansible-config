@@ -8,7 +8,7 @@
     - name: ensure wireshark is at the latest version
       yum:
         name: wireshark
-        state: latest
+        state: present
 
 - name: update LB server
   hosts: lb
@@ -23,6 +23,5 @@
     - name: ensure wireshark is at the latest version
       apt:
         name: wireshark
-        state: abesnt
-        
----
+        state: present
+      
